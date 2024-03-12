@@ -1,0 +1,22 @@
+Plan de Test
+    Groupe d'Utilisateurs (Thread Group)
+        - Nombre de Threads: 10
+        - Période de Rampe: 5 secondes
+        - Nombre de répétitions: 1
+    Échantillon HTTP (HTTP Request)
+        - Méthode: GET
+        - URL: https://www.github.com/
+    Assertion de Réponse (Response Assertion)
+        - Appliquer à: JMeter Variable
+        - Variable à tester: RESPONSE_CODE
+        - Patern à tester: 200
+    Minuterie Uniforme Aleatoire (Uniform Random Timer)
+        - Délai Constant: 3000 (3 secondes)
+    Échantillon HTTP (HTTP Request)
+        - Méthode: GET
+        - URL: https://www.gitlab.com
+    Assertion de Réponse (Response Assertion)
+        - Appliquer à: JMeter Variable
+        - Variable à tester: RESPONSE_CODE
+        - Patern à tester: 200
+    Rapport de Synthèse (Summary Report)
