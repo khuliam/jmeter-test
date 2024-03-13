@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PerformanceTests - ${SITE_NAME}" time="60">
+    <testcase name="LoadTestHomePage" time="30"/>
+    <testcase name="LoadTestLoginPage" time="20"/>
+    <testcase name="LoadTestSearchPage" time="10"/>
+</testsuite>
